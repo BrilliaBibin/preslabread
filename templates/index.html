@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Label Reading</title>
+</head>
+<body>
+    <h1>Welcome to Prescription Label Reading</h1>
+    <p>Upload your prescription label image</p>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Process">
+    </form>
+
+    <div id="result">
+        <p>OCR Results:</p>
+        <ul>
+            {% for line in ocr_results %}
+                <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+
+        <h1>Audio Player</h1>
+        <audio controls>
+            <source src="{{ url_for('get_audio') }}" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>

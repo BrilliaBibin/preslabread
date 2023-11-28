@@ -1,0 +1,11 @@
+# render.yaml
+
+services:
+  - name: web
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -b 0.0.0.0:$PORT application:app
+    envVars:
+      - key: KEY1
+        value: VALUE1
+      - key: KEY2
+        value: VALUE2
