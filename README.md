@@ -13,9 +13,10 @@ conda activate venv
 pip install -r requirements.txt
 python app.py
 
-Audio Path:https://github.com/BrilliaBibin/labelreading/blob/main/prescription.mp3
+Audio Path:https://github.com/BrilliaBibin/preslabread/blob/main/labelreading.mp3
 
 
-Video Path:https://github.com/BrilliaBibin/labelreading/blob/main/%E2%97%8F%20labelread.ipynb%20-%20readinglabel%20-%20Visual%20Studio%20Code%202023-11-16%2012-23-44.mp4
+Video Path:https://github.com/BrilliaBibin/preslabread/blob/main/labelread.mp4
 
-Deployment link:https://label-vozs.onrender.com/ 
+
+Deployment link: https://label-vozs.onrender.com/
